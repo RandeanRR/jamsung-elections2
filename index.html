@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JAMDUNG Elections Commission</title>
+
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f8ff;
             color: #333;
-            line-height: 1.6;
         }
+
         .container {
             width: 1000px;
             margin: 20px auto;
@@ -20,106 +22,69 @@
             box-shadow: 0 0 15px rgba(0,51,102,0.3);
             border-radius: 10px;
         }
+
         .letterhead {
-            border: 2px solid #003366;
-            padding: 20px;
-            margin-bottom: 30px;
             text-align: center;
-            background: linear-gradient(to right, #fff, #e6f0ff);
-            border-radius: 8px;
+            margin-bottom: 20px;
         }
+
         .logo-container {
             width: 100px;
             height: 100px;
-            margin: 0 auto 10px;
-            border: 2px solid #003366;
+            margin: auto;
             border-radius: 50%;
             overflow: hidden;
-            background-color: white;
+            border: 2px solid #003366;
         }
-        .logo-image {
+
+        .logo-container img {
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .logo-text {
-            font-size: 32px;
-            font-weight: bold;
-            color: #003366;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-        }
-        .slogan {
-            font-size: 16px;
-            font-style: italic;
-            color: #666;
-            margin: 10px 0;
-        }
-        .address {
-            font-size: 14px;
-            color: #444;
-            line-height: 1.8;
-        }
-        h1 {
-            color: #003366;
-            text-align: center;
-            margin: 20px 0;
-            font-size: 28px;
-            border-bottom: 2px solid #ff9900;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #003366;
-            margin: 20px 0 10px 0;
-            font-size: 22px;
-            border-left: 5px solid #ff9900;
-            padding-left: 10px;
-        }
+
         .nav-links {
             background-color: #003366;
             padding: 15px;
-            margin: 20px 0;
             text-align: center;
             border-radius: 50px;
+            margin: 20px 0;
         }
+
         .nav-links a {
             color: white;
             text-decoration: none;
-            padding: 10px 25px;
             margin: 0 10px;
-            border-radius: 25px;
             font-weight: bold;
-            display: inline-block;
-            background-color: rgba(255,255,255,0.1);
         }
+
         .nav-links a:hover {
-            background-color: #ff9900;
-            color: #003366;
+            color: #ff9900;
         }
+
         .form-download-section {
             background-color: #e6f0ff;
-            border: 2px dashed #003366;
             padding: 20px;
-            margin: 20px 0;
             text-align: center;
             border-radius: 10px;
         }
+
         .form-download-btn {
             display: inline-block;
             background-color: #28a745;
             color: white;
-            padding: 15px 30px;
-            font-size: 18px;
-            font-weight: bold;
+            padding: 15px 25px;
+            font-size: 16px;
             text-decoration: none;
-            border-radius: 50px;
-            margin: 10px 0;
-            border: 2px solid #1e7e34;
+            border-radius: 30px;
+            margin-top: 10px;
         }
+
         .form-download-btn:hover {
             background-color: #ff9900;
             color: #003366;
         }
+
         .footer {
             margin-top: 30px;
             padding: 15px;
@@ -127,130 +92,54 @@
             color: white;
             text-align: center;
             border-radius: 5px;
-            font-size: 14px;
         }
+
         .footer a {
             color: #ff9900;
             text-decoration: none;
         }
-        .footer a:hover {
-            text-decoration: underline;
-        }
-        .party-table, .summary-table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 20px 0;
-        }
-        .party-table th, .summary-table th {
-            background-color: #003366;
-            color: white;
-            padding: 12px;
-            border: 1px solid #002244;
-        }
-        .party-table td, .summary-table td {
-            padding: 10px;
-            border: 1px solid #ddd;
-        }
-        .constituency-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-        .constituency-card {
-            background: #f8f9fa;
-            border: 1px solid #003366;
-            border-radius: 8px;
-            padding: 15px;
-            text-align: center;
-        }
-        .constituency-card h3 {
-            color: #003366;
-            border-bottom: 1px solid #ff9900;
-            padding-bottom: 5px;
-        }
-        .stat-box {
-            padding: 15px;
-            text-align: center;
-            border-radius: 8px;
-            color: white;
-            background: #003366;
-        }
-        .quick-stats-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            margin: 20px 0;
-        }
     </style>
 </head>
+
 <body>
+
 <div class="container">
+
     <div class="letterhead">
         <div class="logo-container">
-            <img src="logo.jpg" alt="JAMDUNG Elections Commission Logo" class="logo-image">
+            <img src="logo.jpg" alt="Logo"
+                 onerror="this.src='https://via.placeholder.com/100';">
         </div>
-        <div class="logo-text">JAMDUNG ELECTIONS COMMISSION</div>
-        <div class="slogan">"Free and Fair Elections"</div>
-        <div class="address">
-            7 Ivywell Court, Baker's End, Kingston 8, Jamaica W.I.<br>
+
+        <h2>JAMDUNG ELECTIONS COMMISSION</h2>
+        <p><i>"Free and Fair Elections"</i></p>
+
+        <p>
             📧 <a href="mailto:randeanritchie496@gmail.com">randeanritchie496@gmail.com</a><br>
             📞 <a href="tel:+18767682998">(876) 768-2998</a>
-        </div>
+        </p>
     </div>
-
-    <h1>JAMDUNG NATIONAL ELECTIONS 2025-2026<br>OFFICIAL RESULTS SUMMARY</h1>
 
     <div class="nav-links">
         <a href="#">🏠 Home</a>
-        <a href="mailto:randeanritchie496@gmail.com">📧 Email Commission</a>
-        <a href="CANDIDATE%20NOMINATION%20FORM.docx" download>📝 Download Nomination Form</a>
+        <a href="mailto:randeanritchie496@gmail.com">📧 Email</a>
+        <a href="CANDIDATE NOMINATION FORM.docx" download>📝 Download Form</a>
     </div>
 
     <div class="form-download-section">
-        <h2 style="border-left: none; text-align: center;">📝 CANDIDATE NOMINATION FORM</h2>
-        <p>Download the official JAMDUNG Elections Commission Nomination Form below:</p>
-        <a href="CANDIDATE%20NOMINATION%20FORM.docx" download class="form-download-btn">
-            📥 DOWNLOAD NOMINATION FORM
+        <h2>📝 Candidate Nomination Form</h2>
+        <p>Click below to download the official form:</p>
+
+        <a href="CANDIDATE NOMINATION FORM.docx" download class="form-download-btn">
+            📥 DOWNLOAD FORM
         </a>
-        <p style="margin-top: 10px;">For assistance: <a href="mailto:randeanritchie496@gmail.com">randeanritchie496@gmail.com</a></p>
-    </div>
-
-    <h2>📊 SUMMARY OF VOTES BY PARTY</h2>
-    <table class="party-table">
-        <tr><th>Party</th><th>Total Votes</th><th>Percentage</th></tr>
-        <tr><td>Cornwall Democratic Party (CDP)</td><td>8,567</td><td>28.5%</td></tr>
-        <tr><td>Middlesex Labour Congress (MLC)</td><td>7,234</td><td>24.1%</td></tr>
-        <tr><td>Patriotic Peoples Movement (PPM)</td><td>8,124</td><td>27.0%</td></tr>
-        <tr><td>Surrey Liberal Movement (SLM)</td><td>6,145</td><td>20.4%</td></tr>
-        <tr style="background-color: #e6f0ff; font-weight: bold;"><td>TOTAL</td><td>30,070</td><td>100%</td></tr>
-    </table>
-
-    <h2>🗳️ VOTES BY CONSTITUENCY</h2>
-    <div class="constituency-grid">
-        <div class="constituency-card"><h3>North</h3><p>Votes: 16,157</p><p>Turnout: 87.3%</p></div>
-        <div class="constituency-card"><h3>South</h3><p>Votes: 21,070</p><p>Turnout: 81.0%</p></div>
-        <div class="constituency-card"><h3>East</h3><p>Votes: 22,715</p><p>Turnout: 82.6%</p></div>
-        <div class="constituency-card"><h3>West</h3><p>Votes: 26,838</p><p>Turnout: 83.9%</p></div>
-        <div class="constituency-card"><h3>North West</h3><p>Votes: 31,833</p><p>Turnout: 91.0%</p></div>
-        <div class="constituency-card"><h3>South West</h3><p>Votes: 29,190</p><p>Turnout: 81.1%</p></div>
-        <div class="constituency-card"><h3>East Central</h3><p>Votes: 35,145</p><p>Turnout: 85.7%</p></div>
-    </div>
-
-    <h2>📈 QUICK STATISTICS</h2>
-    <div class="quick-stats-grid">
-        <div class="stat-box"><strong>Total Voters</strong><br><span>216,000</span></div>
-        <div class="stat-box"><strong>Total Votes</strong><br><span>182,948</span></div>
-        <div class="stat-box"><strong>Turnout</strong><br><span>84.7%</span></div>
-        <div class="stat-box"><strong>Abstentions</strong><br><span>33,052</span></div>
     </div>
 
     <div class="footer">
         <p>© 2026 JAMDUNG Elections Commission</p>
-        <p>📧 <a href="mailto:randeanritchie496@gmail.com">randeanritchie496@gmail.com</a> | 📞 <a href="tel:+18767682998">(876) 768-2998</a></p>
-        <p>📍 7 Ivywell Court, Baker's End, Kingston 8, Jamaica W.I.</p>
-        <p><a href="#top" style="color: #ff9900;">⬆ Back to Top</a></p>
     </div>
+
 </div>
+
 </body>
 </html>
